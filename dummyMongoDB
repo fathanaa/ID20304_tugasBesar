@@ -1,0 +1,11 @@
+db.barang.insertMany([
+    {
+        kode_barang:"KB-01",
+        kode_produsen:"Produsen-01",
+        nama_barang: "Silverqueen Coklate",
+        berat: 200,
+        kategori_barang: ["Snack","Makanan Ringan"],
+        jumlah: 91,
+        harga: 43000
+    }
+])

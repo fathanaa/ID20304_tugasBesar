@@ -30,4 +30,7 @@
     text-decoration: none;
 }
 
-.barang
+.barang .row .col p{
+    text-align: center;
+    font-size: 222px;
+}
