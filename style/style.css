@@ -28,9 +28,15 @@
     padding: 0 20px 0 20px;
     color: black;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .barang .row .col p{
     text-align: center;
-    font-size: 222px;
+    font-size: 20px;
+}
+
+#judul a{
+    color: black;
+    list-style-type: none;
 }

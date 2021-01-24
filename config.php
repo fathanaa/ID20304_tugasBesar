@@ -1,3 +1,4 @@
 <?php
-$manager = new MongoDB\Driver\Manager();
+require_once __DIR__ . "/vendor/autoload.php";
+$collection = (new MongoDB\Client)->minimarket->barang;
 ?>
