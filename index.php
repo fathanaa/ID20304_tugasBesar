@@ -43,7 +43,7 @@ session_start();
   <div class="col-sm-3 padding-topBot20px">
     <div class="card">
       <div class="card-body text-center ">
-        <a href="#"  >Elektronik</a>
+        <a href="halaman/elec.php"  >Elektronik</a>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@ session_start();
   <div class="col-sm-3 padding-topBot20px">
     <div class="card">
       <div class="card-body text-center ">
-        <a href="#"  >Bahan Dapur</a>
+        <a href="halaman/dapur.php"  >Bahan Dapur</a>
       </div>
     </div>
   </div>
@@ -59,15 +59,7 @@ session_start();
   <div class="col-sm-3 padding-topBot20px">
     <div class="card">
       <div class="card-body text-center ">
-        <a href="#"  >Pakaian</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-3 padding-topBot20px">
-    <div class="card">
-      <div class="card-body text-center ">
-        <a href="#"  >Kantor dan Sekolah</a>
+        <a href="halaman/kantor.php"  >Kantor dan Sekolah</a>
       </div>
     </div>
   </div>
@@ -83,7 +75,7 @@ session_start();
   <div class="col-sm-3 padding-topBot20px">
     <div class="card">
       <div class="card-body text-center ">
-        <a href="#"  >Obat-obatan</a>
+        <a href="halaman/obat.php"  >Obat-obatan</a>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
-    <title>minimarket | rumah tangga</title>
+    <title>minimarket | obat</title>
     <style>
       a {
         color:black;
@@ -30,7 +30,7 @@ session_start();
     <div id="judul">
         <h3 class="padding-topBot20px">
           <a href="../index.php"> <i class="bi bi-arrow-left"></i></a>
-          <h3>rumah tangga</h3>
+          <h3>obat</h3>
         </h3>
     </div>
   </header>
@@ -47,7 +47,8 @@ session_start();
 </tr>
 <?php
 require '../config.php';
-$collection = $db->coll_rt;
+$collection = $db->coll_obat;
+// echo "Collection 'barang' selected";
 $cursor = $collection->find();
 $no=0;
 foreach($cursor as $d){
@@ -55,6 +56,7 @@ $no++;
 ?>
 
 <tr>
+
   <td><?php echo $no; ?></td>
   <td><?php echo $d["kode_barang"]; ?></td>
   <td><?php echo $d["nama_barang"]; ?></td>
@@ -62,8 +64,11 @@ $no++;
   <td><?php echo $d["berat"]; ?></td>
   <td><?php echo $d["jumlah"]; ?></td>
   <td><?php echo $d["harga"]; ?></td>
-  <td><?php echo "<a href='../edit/rt-edit.php?id=".$d["_id"]."' class='btn btn-primary'>Edit</a>"; ?></td>
+  <td><?php echo "<a href='../edit/snack-edit.php?id=".$d["_id"]."' class='btn btn-primary'>Edit</a>"; ?></td>
   <td><?php echo "<a href='delete.php?id=".$d["kode_barang"]."' class='btn btn-danger'>Delete</a>"; ?></td>
+  <td>
+    
+  </td>
 </tr>
 
 <?php
